@@ -3747,9 +3747,10 @@ button:focus:not(:focus-visible) {
 .mobile__menu a {
   margin-right: 0;
   display: inline-block;
-  background: #fbd45a;
+  background: #3bbf9e;
   padding: 10px 20px;
   transition: 0.3s;
+  color: #fff;
 }
 .mobile__menu a:hover {
   color: #fff;
@@ -4544,6 +4545,7 @@ button:focus:not(:focus-visible) {
 .footer__area {
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .footer__widget {
   z-index: 9;
@@ -8837,7 +8839,7 @@ button:focus:not(:focus-visible) {
   font-size: 50px;
   color: var(--tp-common-white);
   line-height: 50px;
-  font-weight: 400;
+  font-weight: 600;
   position: relative;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -9029,6 +9031,23 @@ button:focus:not(:focus-visible) {
   background-size: cover;
   background-position: center;
 }
+.history-sec {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-position-y: 100px;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width:619px) {
+  .history-sec {
+    background-position-y: 30px;
+    background-position-x: -940px;
+}
+}
 .tp-cta-4__area {
   z-index: 2;
   background-repeat: no-repeat;
@@ -9042,19 +9061,25 @@ button:focus:not(:focus-visible) {
   width: 100%;
   top: 0;
   left: 0;
-  background: #00715d;
+  background: #22241f;
   opacity: 0.7;
 }
 .tp-cta-4__shap {
   position: absolute;
   content: "";
-  background: rgba(251, 212, 90, 0.8);
+  background: rgb(59 191 158);
   width: 136px;
   height: 183px;
   bottom: -50px;
   right: 122px;
   border-radius: 60px 60px 0 0;
   transform: rotate(-23deg);
+}
+.text-white {
+  color: #fff!important;
+  z-index: 99999999;
+  display: block;
+  position: relative;
 }
 @media (max-width: 767px) {
   .tp-cta-4__shap {
