@@ -1,5 +1,16 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap');
+ body::-webkit-scrollbar-thumb {
+  background-color: #00463f;
+  border-radius: 25px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #3bbf9e;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+}
+ 
 .mean-container .mean-nav ul li > a.mean-expand i, .back-to-top-wrapper, a,
 button,
 p,
@@ -917,7 +928,7 @@ div.demo img {
   font-size: 16px;
   font-weight: 700;
   color: var(--tp-theme-3);
-  background: var(--tp-theme-2);
+  background: #f2d15a;
   text-align: center;
   font-family: var(--tp-ff-space);
   padding: 15px 45px;
@@ -11471,9 +11482,9 @@ button:focus:not(:focus-visible) {
 .contact__input input {
   padding: 0 30px;
   height: 60px;
-  background-color: var(--tp-heading-primary);
+  background-color: #1f7d65;
   color: #fff;
-  border: 2px solid #364743;
+  border: 2px solid #3bbf9e;
 }
 .contact__input input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #98a8a5;
@@ -11501,7 +11512,7 @@ button:focus:not(:focus-visible) {
   }
 }
 .contact__form-wrap {
-  background: var(--tp-heading-primary);
+  background: #3bbf9e;
   padding: 48px 60px 61px 60px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -11517,12 +11528,12 @@ button:focus:not(:focus-visible) {
 .contact__input textarea {
   padding: 35px 30px;
   border: 0;
-  background-color: var(--tp-heading-primary);
+  background-color: #1f7d65;
   color: #fff;
   outline: none;
   resize: none;
   height: 115px;
-  border: 2px solid #364743;
+  border: 2px solid #3bbf9e;
   line-height: 0;
 }
 .contact__input textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -11770,3 +11781,4 @@ button:focus:not(:focus-visible) {
     max-width: 100%;
 }
 }
+
